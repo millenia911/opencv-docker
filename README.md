@@ -11,7 +11,7 @@ then
 docker stack deploy -c docker-compose.yml compose_name
 ```
 
-Running front-end container can be acesses via localhost:5000, but the image processing API live in port 8080.
+The running front-end container can be acesses via ```localhost:5000/home```, and the image processing API live in ```localhost:8080/api/test```.
 
 To pull images only without running:
 ```sh
