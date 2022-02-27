@@ -8,7 +8,7 @@ docker-compose up
 ```
 in the docker-compose.yml directory to run only one container each.
 
-To run in swarm:
+To run in swarm, edit replicas number in .yml file, then initiate the swarm node manager:
 ```sh
 docker swarm init
 ```
