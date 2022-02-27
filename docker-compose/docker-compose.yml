@@ -1,0 +1,22 @@
+version: '3'
+services:
+  face-detection: 
+    image: 'face-det:0227'
+    volumes:
+      - ../mirror_volume:/app/mirror
+    ports:
+      - 8080:8080
+    deploy:
+      replicas: 5
+      restart_policy: 
+        condition: on-failure
+
+  front-end: 
+    image: 'face-det-web:1'
+    volumes:
+      - ../mirror_volume:/app/mirror
+    ports:
+      - 5000:5000
+    deploy:
+      restart_policy:
+        condition: on-failure
