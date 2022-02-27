@@ -1,6 +1,6 @@
-## Simple face detection with docker
+## Simple face detection with OpenCV in docker container
 
-There are two images that used here. The image for front-end hosting and image for the image processing. Both hosted with Flask.
+There are two Docker images that used here. The image for front-end hosting and image for the image processing. Both hosted with Flask.
 
 Simply run 
 ```sh
